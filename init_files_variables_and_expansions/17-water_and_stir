@@ -1,2 +1,2 @@
 #!/bin/bash
-echo -n "${WATER//water/bestchol}${STIR//stir/bestchol}"
+echo -n "${WATER//water/ch}${STIR//stir/hteb}"
