@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "base bestchol: $((WATER#water + STIR#stir))#bestchol
+echo -n "$WATER$STIR" | tr 'waterstir' 'bestchol'
