@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # displaying the text "Best School"
-a=0
-until [$a -ge 10]
+COUNT=10
+until((COUNT <=0));
 do
-echo "Best School"
-a=$((a + 1))
-done
+	echo "Best School"
+((COUNT--))
+done;
