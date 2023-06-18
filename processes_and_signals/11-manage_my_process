@@ -25,9 +25,7 @@ stop() {
 }
 
 restart() {
-    stop
-    start
-    echo "manage_my_process restarted"
+  echo "manage_my_process restarted"
 }
 
 case $1 in
