@@ -5,11 +5,11 @@ PROCESS_SCRIPT="./manage_my_process"
 
 start() {
     if [ -f "$PID_FILE" ]; then
-        echo "manage_my_process is already running."
+        echo "manage_my_process is already running"
     else
         $PROCESS_SCRIPT &
         echo $! > "$PID_FILE"
-        echo "manage_my_process started."
+        echo "manage_my_process started"
     fi
 }
 
@@ -18,16 +18,16 @@ stop() {
         pid=$(cat "$PID_FILE")
         kill "$pid"
         rm "$PID_FILE"
-        echo "manage_my_process stopped."
+        echo "manage_my_process stopped"
     else
-        echo "manage_my_process is not running."
+        echo "manage_my_process is not running"
     fi
 }
 
 restart() {
     stop
     start
-    echo "manage_my_process restarted."
+    echo "manage_my_process restarted"
 }
 
 case $1 in
